@@ -478,10 +478,10 @@ F 3 "" H 6350 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Crystal_GND24_Small Y?
+L Device:Crystal_GND24_Small Y1
 U 1 1 5C35EF93
 P 3050 2250
-F 0 "Y?" V 3000 1950 50  0000 L CNN
+F 0 "Y1" V 3000 1950 50  0000 L CNN
 F 1 "16 MHz" V 3100 1850 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 3050 2250 50  0001 C CNN
 F 3 "~" H 3050 2250 50  0001 C CNN

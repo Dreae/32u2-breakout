@@ -26,22 +26,8 @@ F 4 "https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATMEGA32U2-
 	1    4550 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 5C2431CB
-P 3050 2250
-F 0 "Y1" V 3004 2381 50  0000 L CNN
-F 1 "16 MHz" V 3095 2381 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 3050 2250 50  0001 C CNN
-F 3 "~" H 3050 2250 50  0001 C CNN
-F 4 "https://www.mouser.com/ProductDetail/Epson-Timing/TSX-3225-160000MF09Z-AC3?qs=sGAEpiMZZMsBj6bBr9Q9acukpafrIaZ1%2fpqCtYImzz0%3d" V 3050 2250 50  0001 C CNN "MouserLink"
-	1    3050 2250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3050 2100 3850 2100
-Wire Wire Line
-	3050 2400 3700 2400
 Wire Wire Line
 	3700 2400 3700 2300
 Wire Wire Line
@@ -70,9 +56,6 @@ F 4 "https://www.mouser.com/ProductDetail/Yageo/AC0402JRNPO9BN220?qs=sGAEpiMZZMv
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2650 2400 3050 2400
-Connection ~ 3050 2400
-Wire Wire Line
 	2450 2400 2250 2400
 Wire Wire Line
 	2250 2400 2250 2550
@@ -92,7 +75,6 @@ Wire Wire Line
 	2650 2050 3050 2050
 Wire Wire Line
 	3050 2050 3050 2100
-Connection ~ 3050 2100
 Wire Wire Line
 	2450 2050 2250 2050
 Wire Wire Line
@@ -495,4 +477,25 @@ F 3 "" H 6350 1200 50  0001 C CNN
 	1    6350 1200
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5C35EF93
+P 3050 2250
+F 0 "Y?" V 3000 1950 50  0000 L CNN
+F 1 "16 MHz" V 3100 1850 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 3050 2250 50  0001 C CNN
+F 3 "~" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 2400 3050 2400
+Wire Wire Line
+	3050 2100 3050 2150
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 2350 3050 2400
+Connection ~ 3050 2400
+Wire Wire Line
+	3050 2400 3700 2400
 $EndSCHEMATC
